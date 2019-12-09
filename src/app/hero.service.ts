@@ -9,7 +9,7 @@ import{ HttpClient, HttpHeaders} from '@angular/common/http';
 
 @Injectable()
 export class HeroService {
-  private heroesURL = 'http://localhost:8087/heroes'
+  private heroesURL = 'http://localhost:8080/heros'
   constructor(private http: HttpClient, private messageService:MessageService) { }
   getHeroes(): Observable<Hero[]> {
     //send the message _after_ fetching the heroes
